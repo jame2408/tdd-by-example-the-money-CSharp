@@ -13,7 +13,7 @@ namespace tdd_by_example_the_money
 
         public void Times(int multiplier)
         {
-            Amount = 5 * 2;
+            Amount = this._amount * 2;
         }
     }
 }
