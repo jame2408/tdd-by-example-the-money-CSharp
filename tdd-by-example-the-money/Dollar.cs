@@ -7,12 +7,11 @@ namespace tdd_by_example_the_money
             this.Amount = amount;
         }
 
-        public double Amount { get; set; }
+        public int Amount { get; set; }
 
         public Dollar Times(int multiplier)
         {
-            Amount *= multiplier;
-            return null;
+            return new Dollar(Amount * multiplier);
         }
     }
 }
