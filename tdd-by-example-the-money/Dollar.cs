@@ -6,10 +6,11 @@ namespace tdd_by_example_the_money
         {
         }
 
-        public double Amount { get; set; } = 5 * 2;
+        public double Amount { get; set; }
 
         public void Times(int multiplier)
         {
+            Amount = 5 * 2;
         }
     }
 }
