@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>tdd_by_example_the_money</RootNamespace>
+  </PropertyGroup>
+
+</Project>

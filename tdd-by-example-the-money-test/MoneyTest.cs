@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using tdd_by_example_the_money;
 
 namespace tdd_by_example_the_money_test
 {
