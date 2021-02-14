@@ -9,9 +9,10 @@ namespace tdd_by_example_the_money
 
         public double Amount { get; set; }
 
-        public void Times(int multiplier)
+        public Dollar Times(int multiplier)
         {
             Amount *= multiplier;
+            return null;
         }
     }
 }
