@@ -14,5 +14,11 @@ namespace tdd_by_example_the_money_test
             product = five.Times(3);
             Assert.AreEqual(15, product.Amount);
         }
+
+        [Test]
+        public void equality()
+        {
+            Assert.IsTrue(new Dollar(5).Equals(new Dollar(5)));
+        }
     }
 }
