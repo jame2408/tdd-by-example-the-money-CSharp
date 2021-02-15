@@ -2,9 +2,12 @@ namespace tdd_by_example_the_money
 {
     public class Franc : Money
     {
+        private readonly string _currency;
+
         public Franc(int amount)
         {
             this.Amount = amount;
+            this._currency = "CHF";
         }
 
         public override Money Times(int multiplier)
@@ -14,7 +17,7 @@ namespace tdd_by_example_the_money
 
         public override string Currency()
         {
-            return "CHF";
+            return this._currency;
         }
     }
 }
