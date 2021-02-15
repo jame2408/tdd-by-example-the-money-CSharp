@@ -2,22 +2,22 @@ namespace tdd_by_example_the_money
 {
     public class Dollar
     {
+        private readonly int _amount;
+
         public Dollar(int amount)
         {
-            this.Amount = amount;
+            this._amount = amount;
         }
-
-        public int Amount { get; set; }
 
         public Dollar Times(int multiplier)
         {
-            return new Dollar(Amount * multiplier);
+            return new Dollar(this._amount * multiplier);
         }
 
         public override bool Equals(object? obj)
         {
             var dollar = (Dollar) obj;
-            return Amount == dollar.Amount;
+            return this._amount == dollar._amount;
         }
     }
 }
