@@ -7,7 +7,7 @@ namespace tdd_by_example_the_money
             this.Amount = amount;
         }
 
-        public Money Times(int multiplier)
+        public override Money Times(int multiplier)
         {
             return new Franc(this.Amount * multiplier);
         }

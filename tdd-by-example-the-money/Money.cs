@@ -1,6 +1,6 @@
 ﻿namespace tdd_by_example_the_money
 {
-    public class Money
+    public abstract class Money
     {
         protected internal int Amount;
 
@@ -14,5 +14,7 @@
         {
             return new Dollar(amount);
         }
+
+        public abstract Money Times(int multiplier);
     }
 }
