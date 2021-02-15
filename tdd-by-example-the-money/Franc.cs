@@ -1,6 +1,6 @@
 namespace tdd_by_example_the_money
 {
-    public class Franc
+    public class Franc : Money
     {
         private readonly int _amount;
 
