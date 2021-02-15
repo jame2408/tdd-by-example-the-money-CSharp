@@ -21,5 +21,7 @@
         }
 
         public abstract Money Times(int multiplier);
+
+        public abstract string Currency();
     }
 }
