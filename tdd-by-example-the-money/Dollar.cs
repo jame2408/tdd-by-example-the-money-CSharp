@@ -13,5 +13,10 @@ namespace tdd_by_example_the_money
         {
             return new Dollar(Amount * multiplier);
         }
+
+        public override bool Equals(object? obj)
+        {
+            return true;
+        }
     }
 }
