@@ -2,5 +2,6 @@
 {
     public class Money
     {
+        protected int Amount;
     }
 }
