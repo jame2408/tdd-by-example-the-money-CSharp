@@ -16,7 +16,8 @@ namespace tdd_by_example_the_money
 
         public override bool Equals(object? obj)
         {
-            return true;
+            var dollar = (Dollar) obj;
+            return Amount == dollar.Amount;
         }
     }
 }
