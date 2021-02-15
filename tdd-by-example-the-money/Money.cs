@@ -2,6 +2,6 @@
 {
     public class Money
     {
-        protected int Amount;
+        protected internal int Amount;
     }
 }
