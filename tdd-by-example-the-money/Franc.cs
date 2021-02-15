@@ -11,5 +11,10 @@ namespace tdd_by_example_the_money
         {
             return new Franc(this.Amount * multiplier);
         }
+
+        public override string Currency()
+        {
+            return "CHF";
+        }
     }
 }

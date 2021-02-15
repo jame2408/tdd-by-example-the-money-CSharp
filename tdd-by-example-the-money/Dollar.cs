@@ -11,5 +11,10 @@ namespace tdd_by_example_the_money
         {
             return new Dollar(this.Amount * multiplier);
         }
+
+        public override string Currency()
+        {
+            return "USD";
+        }
     }
 }
