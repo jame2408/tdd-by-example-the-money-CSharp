@@ -2,22 +2,20 @@ namespace tdd_by_example_the_money
 {
     public class Franc : Money
     {
-        private readonly int _amount;
-
         public Franc(int amount)
         {
-            this._amount = amount;
+            this.Amount = amount;
         }
 
         public Franc Times(int multiplier)
         {
-            return new Franc(this._amount * multiplier);
+            return new Franc(this.Amount * multiplier);
         }
 
         public override bool Equals(object? obj)
         {
             var franc = (Franc) obj;
-            return this._amount == franc._amount;
+            return this.Amount == franc.Amount;
         }
     }
 }
