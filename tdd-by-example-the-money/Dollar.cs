@@ -11,11 +11,5 @@ namespace tdd_by_example_the_money
         {
             return new Dollar(this.Amount * multiplier);
         }
-
-        public override bool Equals(object? obj)
-        {
-            var money = (Money) obj;
-            return this.Amount == money.Amount;
-        }
     }
 }

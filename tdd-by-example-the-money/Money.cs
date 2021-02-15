@@ -3,5 +3,11 @@
     public class Money
     {
         protected internal int Amount;
+
+        public override bool Equals(object? obj)
+        {
+            var money = (Money) obj;
+            return this.Amount == money.Amount;
+        }
     }
 }
