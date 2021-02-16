@@ -5,6 +5,12 @@
         private protected int _amount;
         private protected string _currency;
 
+        protected Money(int amount, string currency)
+        {
+            this._amount = amount;
+            this._currency = currency;
+        }
+
         public override bool Equals(object? obj)
         {
             var money = (Money) obj;
