@@ -51,9 +51,9 @@ namespace tdd_by_example_the_money_test
         {
             var five = Money.Dollar(5);
             var result = five.Plus(five);
-            var sum = (Sum) result; 
-            Assert.AreEqual(five, sum.augend);
-            Assert.AreEqual(five, sum.addend);
+            var sum = (Sum) result;
+            Assert.AreEqual(five, sum.Augend);
+            Assert.AreEqual(five, sum.Addend);
         }
     }
 }
