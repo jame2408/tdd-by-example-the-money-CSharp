@@ -27,7 +27,7 @@
             return new Money(amount, "CHF");
         }
 
-        public Money Plus(Money addend)
+        public IExpression Plus(Money addend)
         {
             return new Money(this._amount + addend._amount, this._currency);
         }
