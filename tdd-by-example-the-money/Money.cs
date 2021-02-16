@@ -29,7 +29,7 @@
 
         public IExpression Plus(Money addend)
         {
-            return new Money(this._amount + addend._amount, this._currency);
+            return new Sum(this, addend);
         }
 
         public Money Times(int multiplier)
