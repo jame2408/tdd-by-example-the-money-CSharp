@@ -14,7 +14,7 @@
         public override bool Equals(object? obj)
         {
             var money = (Money) obj;
-            return this._amount == money._amount && GetType() == money.GetType();
+            return this._amount == money._amount && Currency() == money._currency;
         }
 
         public static Money Dollar(int amount)
