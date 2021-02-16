@@ -35,11 +35,5 @@ namespace tdd_by_example_the_money_test
             Assert.AreEqual("USD", Money.Dollar(1).Currency());
             Assert.AreEqual("CHF", Money.Franc(1).Currency());
         }
-
-        [Test]
-        public void different_class_equality()
-        {
-            Assert.IsTrue(new Money(10, "CHF").Equals(new Franc(10, "CHF")));
-        }
     }
 }
