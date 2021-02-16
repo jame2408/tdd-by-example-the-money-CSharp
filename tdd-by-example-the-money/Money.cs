@@ -27,6 +27,12 @@
             return new Money(amount, "CHF");
         }
 
+        public Money Reduce(Bank bank, string to)
+        {
+            var rate = this._currency.Equals("CHF") && this._currency.Equals("USD") ? 2 : 1;
+            return new Money(this._amount / rate, to);
+        }
+
         public IExpression Plus(Money addend)
         {
             return new Sum(this, addend);
@@ -45,11 +51,6 @@
         public string Currency()
         {
             return this._currency;
-        }
-
-        public Money Reduce(string to)
-        {
-            return this;
         }
     }
 }

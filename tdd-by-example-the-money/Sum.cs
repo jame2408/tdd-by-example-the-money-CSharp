@@ -11,7 +11,7 @@
         public Money Augend { get; set; }
         public Money Addend { get; set; }
 
-        public Money Reduce(string to)
+        public Money Reduce(Bank bank, string to)
         {
             var amount = Augend._amount + Addend._amount;
             return new Money(amount, to);
