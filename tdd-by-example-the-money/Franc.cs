@@ -5,7 +5,7 @@ namespace tdd_by_example_the_money
         public Franc(int amount, string currency)
         {
             this._amount = amount;
-            this._currency = "CHF";
+            this._currency = currency;
         }
 
         public override Money Times(int multiplier)
