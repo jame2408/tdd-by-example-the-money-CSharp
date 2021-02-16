@@ -2,7 +2,7 @@
 {
     public class Money : IExpression
     {
-        private protected int _amount;
+        protected internal int _amount;
         private protected string _currency;
 
         public Money(int amount, string currency)
