@@ -39,9 +39,11 @@ namespace tdd_by_example_the_money_test
         [Test]
         public void simple_addition()
         {
-            var sum = Money.Dollar(5).Plus(Money.Dollar(5));
-            Assert.AreEqual(Money.Dollar(10), sum);
+            //var sum = Money.Dollar(5).Plus(Money.Dollar(5));
+            //Assert.AreEqual(Money.Dollar(10), sum);
+
             //opposite down, starting from assertion and backward to find(think) where it came from
+            IExpression sum = five.Plus(five);
             var bank = new Bank();
             Money reduced = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(10), reduced);
