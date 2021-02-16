@@ -2,12 +2,13 @@
 {
     public abstract class Money
     {
-        protected internal int Amount;
+        private protected int _amount;
+        private protected string _currency;
 
         public override bool Equals(object? obj)
         {
             var money = (Money) obj;
-            return this.Amount == money.Amount && GetType() == money.GetType();
+            return this._amount == money._amount && GetType() == money.GetType();
         }
 
         public static Money Dollar(int amount)
@@ -22,6 +23,9 @@
 
         public abstract Money Times(int multiplier);
 
-        public abstract string Currency();
+        public string Currency()
+        {
+            return this._currency;
+        }
     }
 }
