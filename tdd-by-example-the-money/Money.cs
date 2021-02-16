@@ -1,11 +1,11 @@
 ﻿namespace tdd_by_example_the_money
 {
-    public abstract class Money
+    public class Money
     {
         private protected int _amount;
         private protected string _currency;
 
-        protected Money(int amount, string currency)
+        public Money(int amount, string currency)
         {
             this._amount = amount;
             this._currency = currency;
@@ -27,7 +27,10 @@
             return new Franc(amount, "CHF");
         }
 
-        public abstract Money Times(int multiplier);
+        public virtual Money Times(int multiplier)
+        {
+            return null;
+        }
 
         public string Currency()
         {
