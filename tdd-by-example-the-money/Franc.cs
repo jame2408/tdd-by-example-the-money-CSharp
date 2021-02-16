@@ -10,7 +10,7 @@ namespace tdd_by_example_the_money
 
         public override Money Times(int multiplier)
         {
-            return new Franc(this._amount * multiplier);
+            return new Franc(this._amount * multiplier, null);
         }
     }
 }
