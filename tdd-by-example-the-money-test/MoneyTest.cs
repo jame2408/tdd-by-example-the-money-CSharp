@@ -43,6 +43,7 @@ namespace tdd_by_example_the_money_test
             //Assert.AreEqual(Money.Dollar(10), sum);
 
             //opposite down, starting from assertion and backward to find(think) where it came from
+            var five = Money.Dollar(5);
             IExpression sum = five.Plus(five);
             var bank = new Bank();
             Money reduced = bank.Reduce(sum, "USD");
