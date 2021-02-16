@@ -82,11 +82,5 @@ namespace tdd_by_example_the_money_test
             var result = bank.Reduce(Money.Franc(2), "USD");
             Assert.AreEqual(Money.Dollar(1), result);
         }
-
-        [Test]
-        public void array_equals()
-        {
-            Assert.AreSame(new object[] {"abc"}, new object[] {"abc"});
-        }
     }
 }
