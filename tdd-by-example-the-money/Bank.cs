@@ -4,13 +4,7 @@
     {
         public Money Reduce(IExpression source, string to)
         {
-            if (source is Money money)
-            {
-                return money.Reduce(to);
-            }
-
-            var sum = (Sum) source;
-            return sum.Reduce(to);
+            return source.Reduce(to);
         }
     }
 }
