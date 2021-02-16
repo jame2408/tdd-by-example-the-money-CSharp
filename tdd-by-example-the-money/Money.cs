@@ -29,7 +29,7 @@
 
         public Money Reduce(Bank bank, string to)
         {
-            var rate = this._currency.Equals("CHF") && this._currency.Equals("USD") ? 2 : 1;
+            var rate = bank.Rate(this._currency, to);
             return new Money(this._amount / rate, to);
         }
 
