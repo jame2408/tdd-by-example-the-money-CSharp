@@ -2,15 +2,15 @@ namespace tdd_by_example_the_money
 {
     public class Dollar : Money
     {
-        public Dollar(int amount)
+        public Dollar(int amount, string currency)
         {
             this._amount = amount;
-            this._currency = "USD";
+            this._currency = currency;
         }
 
         public override Money Times(int multiplier)
         {
-            return new Dollar(this._amount * multiplier);
+            return Money.Dollar(this._amount * multiplier);
         }
     }
 }
