@@ -6,7 +6,7 @@
         {
             if (source is Money money)
             {
-                return money;
+                return money.Reduce(to);
             }
 
             var sum = (Sum) source;

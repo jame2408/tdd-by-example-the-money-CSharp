@@ -46,5 +46,10 @@
         {
             return this._currency;
         }
+
+        public Money Reduce(string to)
+        {
+            return this;
+        }
     }
 }
