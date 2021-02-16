@@ -27,5 +27,16 @@
             this._from = from;
             this._to = to;
         }
+
+        public override bool Equals(object? obj)
+        {
+            var pair = (Pair) obj;
+            return this._from == pair._from && this._to == pair._to;
+        }
+
+        public override int GetHashCode()
+        {
+            return 0;
+        }
     }
 }
