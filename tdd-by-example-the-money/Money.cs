@@ -1,6 +1,6 @@
 ﻿namespace tdd_by_example_the_money
 {
-    public class Money
+    public class Money : IExpression
     {
         private protected int _amount;
         private protected string _currency;
