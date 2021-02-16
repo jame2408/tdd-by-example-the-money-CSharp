@@ -32,6 +32,11 @@
             return null;
         }
 
+        public override string ToString()
+        {
+            return this._amount + " " + this._currency;
+        }
+
         public string Currency()
         {
             return this._currency;
