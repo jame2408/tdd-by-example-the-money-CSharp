@@ -7,7 +7,8 @@
 
         public Sum(Money augend, Money addend)
         {
-            
+            this.Augend = augend;
+            this.Addend = addend;
         }
     }
 }
