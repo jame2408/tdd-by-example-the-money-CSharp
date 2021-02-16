@@ -27,6 +27,11 @@
             return new Money(amount, "CHF");
         }
 
+        public Money Plus(Money addend)
+        {
+            return new Money(this._amount + addend._amount, this._currency);
+        }
+
         public Money Times(int multiplier)
         {
             return new Money(this._amount * multiplier, this._currency);
