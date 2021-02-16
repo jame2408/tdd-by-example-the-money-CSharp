@@ -2,7 +2,7 @@ namespace tdd_by_example_the_money
 {
     public class Franc : Money
     {
-        public Franc(int amount)
+        public Franc(int amount, string currency)
         {
             this._amount = amount;
             this._currency = "CHF";
