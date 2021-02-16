@@ -8,7 +8,7 @@ namespace tdd_by_example_the_money
 
         public override Money Times(int multiplier)
         {
-            return new Dollar(this._amount * multiplier, "USD");
+            return new Dollar(base._amount * multiplier, base._currency);
         }
     }
 }
