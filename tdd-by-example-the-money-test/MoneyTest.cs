@@ -64,5 +64,13 @@ namespace tdd_by_example_the_money_test
             var result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(7), result);
         }
+
+        [Test]
+        public void reduce_money()
+        {
+            var bank = new Bank();
+            var result = bank.Reduce(Money.Dollar(1), "USD");
+            Assert.AreEqual(Money.Dollar(1), result);
+        }
     }
 }
