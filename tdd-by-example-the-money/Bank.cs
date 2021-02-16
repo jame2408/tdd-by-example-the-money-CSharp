@@ -18,6 +18,11 @@ namespace tdd_by_example_the_money
 
         public int Rate(string from, string to)
         {
+            if (from == to)
+            {
+                return 1;
+            }
+
             return (int) this._rates[new Pair(from, to)];
         }
     }
@@ -35,7 +40,7 @@ namespace tdd_by_example_the_money
 
         public override bool Equals(object? obj)
         {
-            var pair = (Pair)obj;
+            var pair = (Pair) obj;
             return this._from == pair._from && this._to == pair._to;
         }
 
