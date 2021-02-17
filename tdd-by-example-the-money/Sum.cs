@@ -8,8 +8,8 @@
             this.Addend = addend;
         }
 
-        public Money Augend { get; set; }
-        public Money Addend { get; set; }
+        public IExpression Augend { get; set; }
+        public IExpression Addend { get; set; }
 
         public Money Reduce(Bank bank, string to)
         {
