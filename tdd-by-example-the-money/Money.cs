@@ -38,7 +38,7 @@
             return new Sum(this, addend);
         }
 
-        public Money Times(int multiplier)
+        public IExpression Times(int multiplier)
         {
             return new Money(this._amount * multiplier, this._currency);
         }
