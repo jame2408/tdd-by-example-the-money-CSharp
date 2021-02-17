@@ -117,5 +117,12 @@ namespace tdd_by_example_the_money_test
             var result = bank.Reduce(sum, "USD");
             Assert.AreEqual(Money.Dollar(20), result);
         }
+
+        [Test]
+        public void plus_same_currency_returns_money()
+        {
+            var sum = Money.Dollar(1).Plus(Money.Dollar(1));
+            Assert.IsTrue(sum is Money);
+        }
     }
 }
