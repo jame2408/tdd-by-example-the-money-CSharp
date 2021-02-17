@@ -19,7 +19,7 @@
 
         public IExpression Plus(IExpression addend)
         {
-            return null;
+            return new Sum(this, addend);
         }
     }
 }
