@@ -87,7 +87,7 @@ namespace tdd_by_example_the_money_test
         public void mixed_addition()
         {
             Money fiveBucks = Money.Dollar(5);
-            Money tenFrancs = Money.Franc(10);
+            IExpression tenFrancs = Money.Franc(10);
             var bank = new Bank();
             bank.AddRate("CHF", "USD", 2);
             var result = bank.Reduce(fiveBucks.Plus(tenFrancs), "USD");
