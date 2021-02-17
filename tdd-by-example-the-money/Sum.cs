@@ -2,7 +2,7 @@
 {
     public class Sum : IExpression
     {
-        public Sum(Money augend, Money addend)
+        public Sum(IExpression augend, IExpression addend)
         {
             this.Augend = augend;
             this.Addend = addend;
