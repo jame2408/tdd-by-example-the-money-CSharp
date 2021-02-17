@@ -16,5 +16,10 @@
             var amount = Augend.Reduce(bank, to)._amount + Addend.Reduce(bank, to)._amount;
             return new Money(amount, to);
         }
+
+        public IExpression Plus(IExpression addend)
+        {
+            return null;
+        }
     }
 }
