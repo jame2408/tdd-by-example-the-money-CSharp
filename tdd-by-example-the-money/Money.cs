@@ -33,7 +33,7 @@
             return new Money(this._amount / rate, to);
         }
 
-        public IExpression Plus(Money addend)
+        public IExpression Plus(IExpression addend)
         {
             return new Sum(this, addend);
         }
